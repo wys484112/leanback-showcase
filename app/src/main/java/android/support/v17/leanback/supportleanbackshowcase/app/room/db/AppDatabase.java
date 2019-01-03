@@ -22,7 +22,7 @@ import android.support.v17.leanback.supportleanbackshowcase.app.room.db.entity.C
 import android.support.v17.leanback.supportleanbackshowcase.app.room.db.entity.VideoEntity;
 
 
-@Database(entities = {VideoEntity.class, CategoryEntity.class}, version = 1)
+@Database(entities = {VideoEntity.class, CategoryEntity.class}, version = 1,exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase{
     public static final String DATABASE_NAME = "leanback_showcase.db";
 
